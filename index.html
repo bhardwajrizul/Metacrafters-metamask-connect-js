@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaMask Connection Check</title>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background: #94bbe9;
+    }
+    div {
+        display: flex;
+    }
+</style>
+<body>
+    <h1>Connect to Metamask</h1>
+    <button id="button" onclick="connectWallet()">Connect Wallet</button>
+    <div>
+        <p>Address : </p> 
+        <p id="address"></p>
+    </div>
+    <div>
+        <p>Balance : </p>
+        <p id="balance"></p>
+    </div>
+    <div id="error">
+        <!-- SHOW ERROR HERE -->
+    </div>
+
+    <footer>Developed with ❤️ by <a href="https://www.linkedin.com/in/rizul/">Rizul</a></footer>
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.0.2/web3.min.js"></script>
+    <script src="./script.js" defer></script>
+</body>
+</html>
